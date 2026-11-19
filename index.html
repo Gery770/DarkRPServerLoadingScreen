@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Divergence RP</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700|Roboto:400,500,700" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Background: faint city skyline and the three paths running across the screen -->
+<div id="bg">
+  <svg class="bg-paths" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+    <path d="M960 1180 L960 760 Q960 640 520 520 L-100 360" stroke="#e15046"/>
+    <path d="M960 760 L960 -100" stroke="#60c86e"/>
+    <path d="M960 760 Q960 640 1400 520 L2020 360" stroke="#409ee6"/>
+  </svg>
+  <svg class="bg-city" viewBox="0 0 1920 300" preserveAspectRatio="none">
+    <path d="M0 300 L0 210 L60 210 L60 150 L120 150 L120 190 L170 190 L170 90 L240 90 L240 170 L300 170 L300 120 L330 120 L330 60 L360 60 L360 120 L420 120 L420 200 L480 200 L480 140 L560 140 L560 180 L600 180 L600 70 L680 70 L680 160 L740 160 L740 110 L800 110 L800 190 L860 190 L860 130 L900 130 L900 40 L940 40 L940 130 L1000 130 L1000 170 L1060 170 L1060 100 L1140 100 L1140 190 L1200 190 L1200 150 L1250 150 L1250 80 L1310 80 L1310 160 L1380 160 L1380 120 L1440 120 L1440 200 L1500 200 L1500 90 L1560 90 L1560 140 L1620 140 L1620 60 L1660 60 L1660 150 L1720 150 L1720 190 L1790 190 L1790 120 L1850 120 L1850 180 L1920 180 L1920 300 Z"/>
+  </svg>
+</div>
+
+<!-- Header -->
+<div id="header">
+  <img class="mark" src="assets/logo-mark.png" alt="">
+  <div class="brand">
+    <div class="brand-name">DIVERGENCE</div>
+    <div class="brand-sub">ROLEPLAY</div>
+  </div>
+  <div id="server">
+    <div id="server-name">Divergence RP</div>
+    <div id="server-info">Joining the city</div>
+  </div>
+</div>
+
+<!-- Screens -->
+<div id="stage">
+
+  <!-- 1. Welcome -->
+  <div class="slide" data-accent="white">
+    <div class="kicker">Welcome to Divergence RP</div>
+    <h1>Three paths. <span class="dim">One city.</span></h1>
+    <p class="lead">Everything you do earns points, and points unlock new jobs, ranks, crimes and gear. Pick the side you like, or walk more than one.</p>
+    <div class="cards three">
+      <div class="card civ">
+        <div class="card-tag">Civilian</div>
+        <div class="card-title">Work your way up</div>
+        <p>Odd jobs, cooking, supply runs and helping people. Climb from Citizen to running the city as Mayor.</p>
+      </div>
+      <div class="card cop">
+        <div class="card-tag">Police</div>
+        <div class="card-title">Keep the peace</div>
+        <p>Arrest the wanted and rank up from Cadet to Captain, with SWAT, Detective and the Chief's badge on the way.</p>
+      </div>
+      <div class="card crim">
+        <div class="card-tag">Criminal</div>
+        <div class="card-title">Build a reputation</div>
+        <p>Pickpocket, rob stores, run with a gang. Make it to Mastermind, then Crime Lord, and take on the PD.</p>
+      </div>
+    </div>
+    <div class="note">Points only unlock: nothing ever caps you. Going against the police costs police points, so no one is a top cop and a crime boss at once. <b>F4 &gt; Progress</b> shows what's next.</div>
+  </div>
+
+  <!-- 2. Civilian path -->
+  <div class="slide" data-accent="civ">
+    <div class="kicker civ-text">The civilian path</div>
+    <h1>From odd jobs <span class="dim">to the Mayor's office</span></h1>
+    <div class="track civ">
+      <div class="track-line"></div>
+      <div class="node" style="left:4%"><div class="dot">0</div><div class="node-name">Citizen, Hobo, Medic</div><div class="node-sub">Odd jobs and reviving</div></div>
+      <div class="node" style="left:15.5%"><div class="dot">10</div><div class="node-name">Chef</div><div class="node-sub">Cook food with buffs</div></div>
+      <div class="node" style="left:27%"><div class="dot">15</div><div class="node-name">Guard</div><div class="node-sub">Get hired for protection</div></div>
+      <div class="node" style="left:38.5%"><div class="dot">25</div><div class="node-name">Gun Dealer</div><div class="node-sub">Sell legal guns</div></div>
+      <div class="node" style="left:50%"><div class="dot">30</div><div class="node-name">Bartender</div><div class="node-sub">Drinks and buffs</div></div>
+      <div class="node" style="left:61.5%"><div class="dot">45</div><div class="node-name">Banker</div><div class="node-sub">Run the bank</div></div>
+      <div class="node" style="left:73%"><div class="dot">80</div><div class="node-name">Club Owner</div><div class="node-sub">Charge entry</div></div>
+      <div class="node" style="left:84.5%"><div class="dot">110</div><div class="node-name">Hotel Manager</div><div class="node-sub">Rent out rooms</div></div>
+      <div class="node top" style="left:96%"><div class="dot">150</div><div class="node-name">Mayor</div><div class="node-sub">Laws, tax, lockdowns</div></div>
+    </div>
+    <div class="earn">
+      <div class="earn-title civ-text">How you earn civilian points</div>
+      <div class="chip">Odd jobs from the job board</div>
+      <div class="chip">Supply runs for your shop</div>
+      <div class="chip">Selling food and drinks</div>
+      <div class="chip">Reviving downed players</div>
+      <div class="chip">Guard shifts</div>
+    </div>
+    <div class="note">The Gun Dealer's stock grows with you: revolvers at 35, shotguns at 50, SMGs at 65 civilian points.</div>
+  </div>
+
+  <!-- 3. Police path -->
+  <div class="slide" data-accent="cop">
+    <div class="kicker cop-text">The police path</div>
+    <h1>Cadet today, <span class="dim">Chief tomorrow</span></h1>
+    <div class="track cop seven">
+      <div class="track-line"></div>
+      <div class="node" style="left:4%"><div class="dot">0</div><div class="node-name">Cadet</div><div class="node-sub">Patrol</div></div>
+      <div class="node" style="left:19.33%"><div class="dot">15</div><div class="node-name">Officer</div><div class="node-sub">Prison Warden</div></div>
+      <div class="node" style="left:34.67%"><div class="dot">30</div><div class="node-name">Senior Officer</div><div class="node-sub">Police Medic</div></div>
+      <div class="node" style="left:50%"><div class="dot">50</div><div class="node-name">Sergeant</div><div class="node-sub">Detective</div></div>
+      <div class="node" style="left:65.33%"><div class="dot">100</div><div class="node-name">Lieutenant</div><div class="node-sub">SWAT</div></div>
+      <div class="node" style="left:80.67%"><div class="dot">160</div><div class="node-name">Captain</div><div class="node-sub">Top of the ranks</div></div>
+      <div class="node top" style="left:96%"><div class="dot">220</div><div class="node-name">Chief</div><div class="node-sub">Runs the department</div></div>
+    </div>
+    <div class="earn">
+      <div class="earn-title cop-text">How you earn police points</div>
+      <div class="chip">Arrests: more for the most wanted</div>
+      <div class="chip">Assisting an arrest</div>
+      <div class="chip">Finding contraband in a search</div>
+      <div class="chip">Clearing a warrant raid</div>
+    </div>
+    <div class="note">Ranks come automatically with your points; pick a specialty at the police locker. Arrest the wanted, don't execute: shooting people who aren't wanted costs police points.</div>
+  </div>
+
+  <!-- 4. Criminal path -->
+  <div class="slide" data-accent="crim">
+    <div class="kicker crim-text">The criminal path</div>
+    <h1>Every crime <span class="dim">opens the next one</span></h1>
+    <div class="track crim seven">
+      <div class="track-line"></div>
+      <div class="node" style="left:4%"><div class="dot">0</div><div class="node-name">Thief</div><div class="node-sub">Lockpicks, pickpocketing, houses</div></div>
+      <div class="node" style="left:19.33%"><div class="dot">20</div><div class="node-name">Robber</div><div class="node-sub">Stores, ATMs, gangs</div></div>
+      <div class="node" style="left:34.67%"><div class="dot">40</div><div class="node-name">Hitman, Drug Dealer</div><div class="node-sub">Hits, kidnapping, drugs</div></div>
+      <div class="node" style="left:50%"><div class="dot">75</div><div class="node-name">Fugitive</div><div class="node-sub">Jailbreaks, join bank heists</div></div>
+      <div class="node" style="left:65.33%"><div class="dot">120</div><div class="node-name">Black Market</div><div class="node-sub">Illegal guns, drill, C4</div></div>
+      <div class="node" style="left:80.67%"><div class="dot">200</div><div class="node-name">Mastermind</div><div class="node-sub">Start bank heists</div></div>
+      <div class="node top" style="left:96%"><div class="dot">400</div><div class="node-name">Crime Lord</div><div class="node-sub">Lead a PD raid</div></div>
+    </div>
+    <div class="earn">
+      <div class="earn-title crim-text">How you earn criminal points</div>
+      <div class="chip">Selling loot at the fence</div>
+      <div class="chip">Store and house robberies</div>
+      <div class="chip">Hits and drug deals</div>
+      <div class="chip">Heists and raids</div>
+      <div class="chip">Shaking off the police</div>
+    </div>
+    <div class="note">Any job outside the police earns criminal ranks. Crimes make you wanted: the police chase, and a bounty is paid when you're caught.</div>
+  </div>
+
+  <!-- 5. Store robbery -->
+  <div class="slide scenario" data-accent="crim">
+    <div class="kicker crim-text">Scenario: store robbery</div>
+    <h1>Empty the register, <span class="dim">then get away</span></h1>
+    <div class="steps four">
+      <div class="step"><div class="step-n">1</div><div class="step-title">Gear up</div><p>Reach the Robber rank (20 criminal points). At least one cop has to be online.</p></div>
+      <div class="step"><div class="step-n">2</div><div class="step-title">Hold it up</div><p>Weapon out, hold <b>E</b> on the clerk. Cash flows into your loot bag while you stay inside.</p></div>
+      <div class="step"><div class="step-n">3</div><div class="step-title">Keep them covered</div><p>Look away too long and the clerk pulls a shotgun. Killing the clerk is a serious crime.</p></div>
+      <div class="step"><div class="step-n">4</div><div class="step-title">Cash out</div><p>Lose the police, then sell the cash at your fence for criminal points.</p></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><span>Reward</span>4 criminal points and the cash</div>
+      <div class="fact"><span>Cooldown</span>each store 15 minutes</div>
+      <div class="fact"><span>Heat</span>you're wanted until you shake them</div>
+    </div>
+  </div>
+
+  <!-- 6. Bank heist -->
+  <div class="slide scenario" data-accent="crim">
+    <div class="kicker crim-text">Scenario: bank heist</div>
+    <h1>The big one. <span class="dim">Bring a crew.</span></h1>
+    <div class="steps five">
+      <div class="step"><div class="step-n">1</div><div class="step-title">The plan</div><p>A Mastermind looks at the Banker with a weapon out and types <b>/heist</b>. Needs a Banker on duty and 3 police online.</p></div>
+      <div class="step"><div class="step-n">2</div><div class="step-title">The crew</div><p>The gang's Fugitives get 60 seconds to join. Everyone in is wanted at once.</p></div>
+      <div class="step"><div class="step-n">3</div><div class="step-title">The vault</div><p>Drill the vault door's cores and keep the drill cool, then plant C4. Armed guards shoot back.</p></div>
+      <div class="step"><div class="step-n">4</div><div class="step-title">The haul</div><p>Hold <b>E</b> on the cash to bag it. Downed, dead or arrested robbers are out.</p></div>
+      <div class="step"><div class="step-n">5</div><div class="step-title">The getaway</div><p>Sell your bag at the fence for 15 criminal points each.</p></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><span>Cooldown</span>45 minutes between heists</div>
+      <div class="fact"><span>At stake</span>bank interest, never what players deposit</div>
+      <div class="fact cop-fact"><span>Police</span>stop it: the Banker and Guards fight back too</div>
+    </div>
+  </div>
+
+  <!-- 7. Raids -->
+  <div class="slide scenario" data-accent="crim">
+    <div class="kicker crim-text">Scenario: base raids</div>
+    <h1>Break in, <span class="dim">or hold the line</span></h1>
+    <div class="steps four">
+      <div class="step"><div class="step-n">1</div><div class="step-title">Break in</div><p>Lockpick a door, crack a keypad or set off a breach charge. That starts the raid; your gang nearby joins.</p></div>
+      <div class="step"><div class="step-n">2</div><div class="step-title">Read the card</div><p>The raid card (top right) shows both sides, the timer and what to do next.</p></div>
+      <div class="step"><div class="step-n">3</div><div class="step-title">The fight</div><p>Defenders may fight raiders without being wanted. Dead, arrested or gone: you're out.</p></div>
+      <div class="step"><div class="step-n">4</div><div class="step-title">The result</div><p>No defender standing: the raiders take it. Time runs out: the defenders held.</p></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><span>Building a base</span>at most 3 fading doors and 3 doors on the way in</div>
+      <div class="fact"><span>The path</span>at most 4 turns, no mazes</div>
+      <div class="fact"><span>Windows</span>at least a 0.75x0.75 plate, both ways</div>
+    </div>
+  </div>
+
+  <!-- 8. PD raid -->
+  <div class="slide scenario" data-accent="cop">
+    <div class="kicker crim-text">Scenario: PD raid</div>
+    <h1>Take on <span class="dim">the whole department</span></h1>
+    <div class="steps four">
+      <div class="step"><div class="step-n">1</div><div class="step-title">The deal</div><p>A gang Leader or Officer with the Crime Lord rank talks to Butcher by the PD's back doors and pays the deposit.</p></div>
+      <div class="step"><div class="step-n">2</div><div class="step-title">Get inside</div><p>Break a PD door or get a raider into the PD before time runs out, or the deposit's gone.</p></div>
+      <div class="step"><div class="step-n">3</div><div class="step-title">Pick a target</div><p>Kill or kidnap the Mayor, cut a prisoner out of jail, or crack the vault's three locks.</p></div>
+      <div class="step"><div class="step-n">4</div><div class="step-title">Hold on</div><p>Any target done wins the deposit back. Police defending the PD keep respawning: no NLR for them.</p></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><span>Who</span>a gang with a Crime Lord (400 criminal points)</div>
+      <div class="fact"><span>Raiders</span>wanted the whole raid, and lose police points</div>
+      <div class="fact cop-fact"><span>Police</span>every cop on duty can defend</div>
+    </div>
+  </div>
+
+</div>
+
+<div id="dots"></div>
+
+<!-- Tip -->
+<div id="tip">
+  <div id="tip-label">TIP</div>
+  <div id="tip-text"></div>
+</div>
+
+<!-- Loading progress -->
+<div id="loading">
+  <div id="status">Connecting</div>
+  <div id="percent"></div>
+  <div id="bar"><div id="bar-fill"></div></div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
