@@ -47,7 +47,7 @@ to hold screen N.
         "Police specialties (SWAT, Detective, Warden, Medic) are picked at the police locker.",
         "Shake off the police after a crime and you'll earn a criminal point for it.",
         "Purple and black checkers or ERROR models? You need Counter-Strike: Source content.",
-        "Gangs unlock at the Robber rank: found one or join one, earn gang points, claim turf.",
+        "Gangs unlock at the Gang Member rank (30 criminal points): found one or join one, earn gang points, claim turf.",
         "Store clerks pull a shotgun if you look away too long. Keep them covered."
     ];
 
